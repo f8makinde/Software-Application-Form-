@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Application Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body >
+   <h1 id="title">Software Development Application Form</h1>
+   <p id="description">Please input your information correctly</p> 
+   <form id="survey-form" onsubmit="alert('Thank you for you time')">
+     <fieldset>
+       <label id="name-label">Name<input id="name" type="text" required placeholder="Enter your name"/></label>
+       <label id="email-label">Email<input id="email" type="email" required placeholder="Enter your Email"/></label>
+       <label id="number-label">Age(optional)<input id="number" type="number" min="18" max="120" placeholder="Age"/></label>
+       <label>Which is your current employment status?
+
+       <select id="dropdown">
+         <option>Select current role</option>
+         <option>Student</option>
+         <option>Full-Time</option>
+         <option>Part-Time</option>
+         <option>Prefer not to say</option>
+         <option>Other</option>
+       </select>
+       </label>
+     </fieldset>
+     <fieldset>
+       <label>Would you like us to reach you via phone call?
+        <label><input type="radio" name="reccomend" value="1" class="inline"/>Definitely</label>
+        <label><input type="radio" name="reccomend" value="2" class="inline"/>Maybe</label>
+        <label><input type="radio" name="reccomend" value="3" class="inline"/>Not sure</label>
+       </label>
+     </fieldset>
+     <fieldset>
+       <label>What best describes you?
+         <select id="dropdown">
+           <option>Select an option</option>
+           <option>Optimism</option>
+           <option>Goal Setter</option>
+           <option>Perfectionist</option>
+           <option>Others</option>
+         </select>
+       </label>
+     </fieldset>
+     <fieldset>
+       <label>What part of software development are you interested in? (Check all that apply)
+         <label><input type="checkbox" value="1" class="inline"/>Front-end</label>
+         <label><input type="checkbox" value="2" class="inline"/>Back-end</label>
+         <label><input type="checkbox" value="3" class="inline"/>Cloud and Infrastructure</label>
+         <label><input type="checkbox" value="4" class="inline"/>Full stack</label>
+         <label><input type="checkbox" value="5" class="inline"/>DevOps</label>
+         <label><input type="checkbox" value="6" class="inline"/>DevSecOps</label>
+         <label><input type="checkbox" value="7" class="inline"/>Web Application Security</label>
+         <label><input type="checkbox" value="8" class="inline"/>Product Manager</label>
+         <label><input type="checkbox" value="9" class="inline"/>Documentation Writer</label>
+         <label><input type="checkbox" value="10" class="inline"/>Quaity Assurance</label>
+         <label><input type="checkbox" value="11" class="inline"/>UI/UX designer</label>
+     </fieldset>
+     <fieldset>
+       <label>Any comments or suggestions?
+         <textarea placeholder="Enter your comment here"></textarea>
+       </label>
+     </fieldset>
+     <input id="submit" type="submit" />
+     </form>
+</body>
+</html>
+
+

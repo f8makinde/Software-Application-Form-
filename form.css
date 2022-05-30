@@ -1,0 +1,75 @@
+
+body {
+    background-image: url(andras-vas-Bd7gNnWJBkU-unsplash.jpg) ;
+    background-size: 100% ;
+    color: white;
+    font-family: Tahoma;
+    font-size: 16px;
+    flex-wrap: wrap;
+  }
+  h1,p {
+    margin: 1em auto;
+    text-align: center
+  }
+  form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+  }
+  fieldset {
+    border: none;
+    padding: 2rem  auto;
+    background-color: black;
+    width: 500px;
+  }
+  fieldset:not(:last-of-type) {
+    border-bottom: 3px solid black;
+  }
+  label {
+    display: block;
+    margin: 0.5em 0 0;
+  }
+  input, textarea, select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+  }
+  input {
+    border: 1px solid blue;
+    color: black
+  }
+  textarea {
+    height: 120px;
+     margin: 0 0.5em 0.5em 0;
+  }
+  .inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+  input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 3em auto;
+    margin-left: 4em;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: red;
+    min-width: 400px;
+    border-radius: 20px;
+    color: white;
+    
+  }
+  
+  .column {
+    width: 100%;
+  }
+  
+  @media (min-width: 600px) {
+    .column {
+      width: 50%;
+    }
+  }
+  /* ** end of undefined ** */
